@@ -1,0 +1,35 @@
+r0
+#exit --------------------- until "Press RETURN to get started"
+RETURN
+>enable
+#configure terminal
+#router ospf 1
+---------------------------(insert network id of neighbouring networks)
+#network 192.168.2.0 0.0.0.255 area 11
+#network 192.168.11.0 0.0.0.255 area 11
+#exit --------------------- until "Press RETURN to get started"
+
+
+r1
+#exit --------------------- until "Press RETURN to get started"
+RETURN
+>enable
+#configure terminal
+#router ospf 1
+---------------------------(insert network id of neighbouring networks)
+#network 192.168.3.0 0.0.0.255 area 0
+#network 192.168.11.0 0.0.0.255 area 11
+#network 192.168.12.0 0.0.0.255 area 12
+#exit --------------------- until "Press RETURN to get started"
+
+
+r2
+#exit --------------------- until "Press RETURN to get started"
+RETURN
+>enable
+#configure terminal
+#router ospf 1
+---------------------------(insert network id of neighbouring networks)
+#network 192.168.4.0 0.0.0.255 area 12
+#network 192.168.12.0 0.0.0.255 area 12
+#exit --------------------- until "Press RETURN to get started"

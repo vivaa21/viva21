@@ -1,0 +1,6 @@
+router(config)#router rip
+router(config-router)# router bgp [id]
+                "    #network[network switch is connected to,i.e, 1.0]
+                "    #network[network to connect to, i.e, 2.0]
+                "    #neighbor[inter switch network] remote-as [area of switch its connected to]
+                "    #neighbot[ip address of that pc in above area] remote-as [area same as switch its connected to]

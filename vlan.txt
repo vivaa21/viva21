@@ -1,0 +1,26 @@
+for vlan 
+to make vlan
+
+switch>enable
+switch# configure
+switch(config)#vlan [id]
+switch(config-vlan)#name [name]
+
+
+to see existing vlans
+
+switch# show v1 or show vlan brief 
+
+
+
+to connect pc to vlan
+switch(config)#interface [port no (fa0/x)]
+switch(config-if)#switchport mode access
+switch(config-if)#switchport access [vlan name]
+
+
+to connect to swtiches 
+switch(config)#interface [if switch1 then check port to which wire is connected fa0/x]
+switch(config-if)#switchport mode trunk
+
+

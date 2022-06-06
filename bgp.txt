@@ -1,0 +1,49 @@
+r0
+#exit --------------------- until "Press RETURN to get started"
+RETURN
+>enable
+#configure terminal
+#router bgp 1
+---------------------------(insert network id of neighbouring networks)
+#network 192.168.2.0
+#network 192.168.3.0
+#network 192.168.4.0
+#neighbor 192.168.11.2 remote-as 3
+#neighbor 192.168.3.2 remote-as 3
+#neighbor 192.168.11.2 remote-as 4
+#neighbor 192.168.4.2 remote-as 4
+#exit --------------------- until "Press RETURN to get started"
+
+
+r1
+#exit --------------------- until "Press RETURN to get started"
+RETURN
+>enable
+#configure terminal
+#router bgp 1
+---------------------------(insert network id of neighbouring networks)
+#network 192.168.2.0
+#network 192.168.3.0
+#network 192.168.4.0
+#neighbor 192.168.11.1 remote-as 2
+#neighbor 192.168.2.2 remote-as 2
+#neighbor 192.168.12.1 remote-as 4
+#neighbor 192.168.4.2 remote-as 4
+#exit --------------------- until "Press RETURN to get started"
+
+
+r2
+#exit --------------------- until "Press RETURN to get started"
+RETURN
+>enable
+#configure terminal
+#router bgp 1
+---------------------------(insert network id of neighbouring networks)
+#network 192.168.2.0
+#network 192.168.3.0
+#network 192.168.4.0
+#neighbor 192.168.12.2 remote-as 3
+#neighbor 192.168.3.2 remote-as 3
+#neighbor 192.168.12.2 remote-as 2
+#neighbor 192.168.2.2 remote-as 2
+#exit --------------------- until "Press RETURN to get started"
